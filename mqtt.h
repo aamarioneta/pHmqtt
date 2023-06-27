@@ -1,0 +1,10 @@
+#define MQTT_SERVER "192.168.178.200"
+#define MQTT_PORT 1883
+#define MQTT_NAME "pH2"
+#define MQTT_DISCOVERY_TOPIC "homeassistant/sensor/" MQTT_NAME "/config"
+#define MQTT_STATE_TOPIC "house/" MQTT_NAME "/state"
+#define MQTT_VOLTAGE_TOPIC "house/" MQTT_NAME "/voltage"
+#define MQTT_CALIBRATION_SOAP_TOPIC "house/" MQTT_NAME "/calibrate-soap"
+#define MQTT_CALIBRATION_VINEGAR_TOPIC "house/" MQTT_NAME "/calibrate-vinegar"
+#define MQTT_CALIBRATION_SOAP_SET_TOPIC "house/" MQTT_NAME "/set-soap"
+#define MQTT_CALIBRATION_VINEGAR_SET_TOPIC "house/" MQTT_NAME "/set-vinegar"
