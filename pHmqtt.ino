@@ -93,12 +93,14 @@ void loop() {
   delay(1000);
 }
 
-const int analogInPin = A0;
+const int pHPin = GPIO32;
+const int temperaturePin = GPIO33;
+
 unsigned long int avgValue;
 int buf[10],temp;
 void updateStatus() {
     for(int i=0;i<10;i++)  {
-    buf[i]=analogRead(analogInPin);
+    buf[i]=analogRead(pHPin);
     delay(30);
   }
   for(int i=0;i<9;i++)  {
